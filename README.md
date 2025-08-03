@@ -1,15 +1,25 @@
 1. SSH into Synology NAS:
 Open a terminal on your computer and connect to your Synology NAS via SSH:
 Make the script executable:
-```ssh admin@<NAS_IP>```
+```
+ssh admin@<NAS_IP>
+```
 
 2. Copy the Script to Synology NAS:
 - Copy:
-```cp cloudflare_ddns.py /usr/syno/bin/ddns```
-```cp cloudflare_ddns_proxied.py /usr/syno/bin/ddns```
+```
+cp cloudflare_ddns.py /usr/syno/bin/ddns
+```
+```
+cp cloudflare_ddns_proxied.py /usr/syno/bin/ddns
+```
 - Make the script executable:
-```sudo chmod +x /usr/syno/bin/ddns/cloudflare_ddns.py```
-```sudo chmod +x /usr/syno/bin/ddns/cloudflare_ddns_proxied.py```
+```
+sudo chmod +x /usr/syno/bin/ddns/cloudflare_ddns.py
+```
+```
+sudo chmod +x /usr/syno/bin/ddns/cloudflare_ddns_proxied.py
+```
 3. Update Synology Configuration:
 
 Edit /etc.defaults/ddns_provider.conf:
@@ -23,7 +33,9 @@ Edit /etc.defaults/ddns_provider.conf:
 ```
 
 How to edit:
-```vi /etc.defaults/ddns_provider.conf```
+```
+vi /etc.defaults/ddns_provider.conf
+```
 `i` to use insert mode
 `esc` to escape
 `:x` to exit and save
