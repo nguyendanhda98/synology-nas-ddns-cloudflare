@@ -6,12 +6,19 @@ ssh admin@<NAS_IP>
 ```
 
 2. Copy the Script to Synology NAS:
-Before copying
+- Before copying
 ```
 chown root:root cloudflare_ddns.py
 ```
 ```
 chown root:root cloudflare_ddns_proxied.py
+```
+- Make sure end of files are LF (Unix) format:
+```
+sed -i 's/\r$//' cloudflare_ddns_test.py
+```
+```
+sed -i 's/\r$//' cloudflare_ddns_proxied_test.py
 ```
 - Copy:
 ```
