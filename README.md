@@ -46,6 +46,6 @@ vi /etc.defaults/ddns_provider.conf
 Go to Control Panel > External Access > DDNS.
 Add a new entry:
 Service Provider: Cloudflare
-Hostname: <HOSTNAME> (example.com)
-Username: <ZONE_ID> (Cloudflare Zone ID)
+Hostname: <ZONE_ID> (Cloudflare Zone ID)
+Username: <DOMAINS> (example1.com|example2.com)
 Password: <API_TOKEN> (Cloudflare API Token)
